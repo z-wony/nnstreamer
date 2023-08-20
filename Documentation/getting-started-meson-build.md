@@ -36,7 +36,7 @@ Optional utilities:
 ```bash
 $ sudo add-apt-repository ppa:nnstreamer/ppa
 $ sudo apt-get update
-$ sudo apt-get install libiniparser-dev=4.1 # if your iniparser is < 4.1
+$ sudo apt-get install libiniparser-dev=4.1* # if your iniparser is < 4.1
 $ sudo apt-get install ssat # if you want to run unit tests
 ```
 You may build and install iniparser and ssat directly from their sources, too.
@@ -55,6 +55,7 @@ $ git clone https://github.com/nnstreamer/nnstreamer
 $ sudo add-apt-repository ppa:nnstreamer/ppa
 $ sudo apt-get update
 $ sudo apt-get install libedgetpu-dev libflatbuffers-dev libgrpc-dev openvino-dev libpaho-mqtt-dev libprotobuf-dev pytorch tensorflow2-lite-dev tvm-runtime-dev
+# For Ubuntu 20.04, replace 'libgrpc-dev' to 'libgrpc-dev=1.16.1*' in above installation script
 ```
 
 *Option B*: Build & install your own frameworks and provide corresponding pkg-config files.
